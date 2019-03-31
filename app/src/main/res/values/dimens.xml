@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <dimen name="textSize_16">@dimen/x16</dimen>
+    <dimen name="textSize_26">@dimen/x26</dimen>
+    <dimen name="textSize_28">@dimen/x28</dimen>
+    <dimen name="textSize_30">@dimen/x30</dimen>
+    <dimen name="textSize_32">@dimen/x32</dimen>
+    <dimen name="textSize_34">@dimen/x34</dimen>
+    <dimen name="textSize_36">@dimen/x36</dimen>
+
+
+    <dimen name="height">@dimen/x40</dimen>
+
+
+    <dimen name="recy">@dimen/x2</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

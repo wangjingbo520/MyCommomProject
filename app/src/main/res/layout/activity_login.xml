@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="@dimen/x600"
+            android:layout_height="@dimen/x90"
+            android:layout_margin="@dimen/x40"
+            android:background="@drawable/bg_btn_login"
+            android:gravity="center"
+            android:text="main" />
+
+        <TextView
+            android:id="@+id/tvPicture"
+            android:layout_width="@dimen/x600"
+            android:layout_height="@dimen/x90"
+            android:background="@drawable/bg_btn_login"
+            android:gravity="center"
+            android:text="picture" />
+
+        <TextView
+            android:id="@+id/tvTabViewpager"
+            android:layout_width="@dimen/x600"
+            android:layout_height="@dimen/x90"
+            android:layout_marginTop="@dimen/x30"
+            android:background="@drawable/bg_btn_login"
+            android:gravity="center"
+            android:text="picture" />
+
+        <TextView
+            android:id="@+id/sidebar"
+            android:layout_width="@dimen/x600"
+            android:layout_height="@dimen/x90"
+            android:layout_marginTop="@dimen/x30"
+            android:background="@drawable/bg_btn_login"
+            android:gravity="center"
+            android:text="侧边栏" />
+
+    </LinearLayout>
+
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

@@ -1,0 +1,52 @@
+1.适配器的使用 com.eims.myapp.adapter.commonmadapter
+      <LQRAdapterForAbsListView>
+      private List<String> mData = new ArrayList<>();
+      for (int i = 0; i < 100; i++) {
+          mData.add("item " + i);
+      }
+
+      //ListView
+      mLv.setAdapter(new LQRAdapterForAbsListView<String>(this, mData, R.layout.item_tv_list) {
+          @Override
+          public void convert(LQRViewHolderForAbsListView helper, String item, int position) {
+              helper.setText(R.id.tv, item);
+          }
+
+      });
+
+      //GridView
+      mGv = (GridView) findViewById(R.id.gv);
+      mGv.setAdapter(new LQRAdapterForAbsListView<String>(this, mData, R.layout.item_tv_list) {
+          @Override
+          public void convert(LQRViewHolderForAbsListView helper, String item, int position) {
+              helper.setText(R.id.tv, item);
+          }
+
+      });
+
+
+      <LQRAdapterForRecyclerView>
+      //RecyclerView
+      mRv.setAdapter(new LQRAdapterForRecyclerView<String>(this, mData, R.layout.item_tv_list) {
+          @Override
+          public void convert(LQRViewHolderForRecyclerView helper, String item, int position) {
+              helper.setText(R.id.tv, item);
+          }
+      });
+
+2.图片加载用法:  com.luck.picture.lib.tools.GlideImageLoaderUtil
+
+
+3.颜色方案:  一般项目主要分几种颜色     字体: #333333 #666666 #999999
+                                   字体大小从dimens文件引入,以便后期全局修改:
+                                             <dimen name="textSize_16">@dimen/x16</dimen>
+                                              <dimen name="textSize_26">@dimen/x26</dimen>
+                                              <dimen name="textSize_28">@dimen/x28</dimen>
+                                              <dimen name="textSize_30">@dimen/x30</dimen>
+                                              <dimen name="textSize_32">@dimen/x32</dimen>
+                                              <dimen name="textSize_34">@dimen/x34</dimen>
+                                              <dimen name="textSize_36">@dimen/x36</dimen>
+
+                                   项目主色调:@color/themeColor
+
+

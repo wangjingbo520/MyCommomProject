@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.RegisterActivity">
+
+    <!--<com.eims.myapp.common.widgets.search.FairySearchView-->
+        <!--android:id="@+id/search_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/x100"-->
+        <!--android:background="@color/themeColor"-->
+        <!--app:maxSearchLength="100"-->
+        <!--app:showBackButton="true"-->
+        <!--app:showCancelButton="true"-->
+        <!--app:showClearButton="true"-->
+        <!--app:showSearchIcon="true" />-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x100"
+        android:background="@color/themeColor"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/x10"
+        android:paddingTop="@dimen/x10">
+
+        <FrameLayout
+            android:id="@+id/flBack"
+            android:layout_width="@dimen/x80"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/x25"
+                android:background="@mipmap/back" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/x65"
+            android:layout_marginRight="@dimen/x10"
+            android:layout_weight="1"
+            android:background="@drawable/bg_search"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/x10"
+            android:paddingLeft="@dimen/x30"
+            android:paddingRight="@dimen/x30"
+            android:paddingTop="@dimen/x10">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/search_bar" />
+
+            <EditText
+                android:id="@+id/etSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x15"
+                android:background="@null"
+                android:ellipsize="start"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="输入关键字"
+                android:imeOptions="actionSearch"
+                android:paddingRight="@dimen/x60"
+                android:singleLine="true"
+                android:textColor="@color/textColor3"
+                android:textColorHint="@color/textColor6"
+                android:textSize="@dimen/textSize_32" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvSearch"
+            android:layout_width="@dimen/x100"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/x20"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="搜索"
+            android:textColor="@drawable/selector_text_press_color"
+            android:textSize="@dimen/textSize_32" />
+
+    </LinearLayout>
+
+</LinearLayout>

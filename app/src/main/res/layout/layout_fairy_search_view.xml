@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_search_view"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x104"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/x16"
+    android:paddingTop="@dimen/x16"
+    android:paddingRight="@dimen/x16"
+    android:paddingBottom="@dimen/x16"
+    tools:background="@color/themeColor">
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/x16"
+        android:background="@color/transparent"
+        android:src="@mipmap/ic_back" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/search_view_background"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/edit_search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableLeft="@mipmap/ic_search_gray"
+            android:hint="请输入搜索关键字"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="@color/textColor3"
+            android:textColorHint="#aaa"
+            android:textSize="@dimen/x30" />
+
+        <ImageButton
+            android:id="@+id/btn_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:src="@mipmap/ic_clear" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_view_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x16"
+        android:background="@color/transparent"
+        android:text="取消"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/x30" />
+
+</LinearLayout>
