@@ -35,7 +35,10 @@ E-mail：	390463560@qq.com
 1、51车（车联网项目）
 项目描述：车联网51车项目，分用户端和商家端，购买二手车、车辆加盟等
 工作职责：独立开发51车用户端，协助51车商家端部分功能实现，app上线        
-技术要点： 1、mvp架构，封装okHttp3+Retrofit+RxJava2作为网络请求工具；
+技术要点：搭建mvp架构，okHttp3+Retrofit+RxJava2作为网络请求工具，选取glide为合适的图片框架。
+在集成了umeng推送、百度地图、微信/支付宝支付中，解决包冲突问题，
+
+1、mvp架构，封装okHttp3+Retrofit+RxJava2作为网络请求工具；
 2、以glide为合适的图片框架，recyclerView列表加载优化；
 3、集成umeng sdk、百度sdk、微信/支付宝支付、环信sdk；
 4、eventBus发布/订阅事件总线,greedDao框架存储数据；
@@ -63,12 +66,13 @@ E-mail：	390463560@qq.com
           7、启动页优化，代码重构优化；
 
 5、云相册（机顶盒项目） 
-项目简介：
-责任描述：界面开发，cmake配置与JNI调用，数据库设计
+项目简介：一款支持本地AI人物识别，内容识别，人物聚类的机顶盒apk,功能有：语音搜索，界面搜索，动态展示，时光，相册，我的
+责任描述:ui开发，数据库设计，JNI开发，
 技术要点：tv项目，使用遥控器来控制。对焦点的处理，比如recyclerView快速向下
 滚动焦点会飞了，我的处理方式是重写LayoutManager的onInterceptFocusSearch(View focused, int direction)方法，
 判断最新显示的item,如果下一个位置<0或者超出item的总数，则返回当前的View，即焦点不动,反之。使用aidl
-进行多进程通信，sqLite原生数据库存储数据。
+进行多进程通信，sqLite原生数据库存储数据。jni开发，配置cmake文件，makeProject生成so文件调用，掌握了jni开发流程
+以及机顶盒开发，对c,c++有一定的了解。
  
 6、向阳宝贝
 项目描述：一款幼儿园图书购买、租赁app
